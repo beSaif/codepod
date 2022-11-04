@@ -27,8 +27,11 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter:
     sdk: flutter
+  flutter_credit_card: ^3.0.4
   flutter_login: ^4.0.0
   get: ^4.6.5
+  google_fonts: ^3.0.1
+  hexcolor: ^3.0.1
   serverpod_flutter: ^0.9.19
 
 dev_dependencies:

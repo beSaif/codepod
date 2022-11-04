@@ -15,9 +15,9 @@ class _LoginScreenBodyState extends State<LoginScreenBody> {
   final UsersController usersController =
       Get.put(UsersController(), permanent: false);
 
-  Duration get loginTime => Duration(milliseconds: 2250);
+  Duration get loginTime => const Duration(milliseconds: 2250);
 
-  var users;
+  Map<String, String> users = {};
 
   Future<String?> _authUser(LoginData data) {
     debugPrint('Name: ${data.name}, Password: ${data.password}');
@@ -55,13 +55,13 @@ class _LoginScreenBodyState extends State<LoginScreenBody> {
   Widget build(BuildContext context) {
     users = usersController.users;
     return FlutterLogin(
-      title: 'ECORP',
+      title: 'Codepod',
       //logo: AssetImage('assets/images/ecorp-lightblue.png'),
       onLogin: _authUser,
       onSignup: _signupUser,
       onSubmitAnimationCompleted: () {
         Navigator.of(context).pushReplacement(MaterialPageRoute(
-          builder: (context) => HomeScreen(),
+          builder: (context) => const HomeScreen(),
         ));
       },
       onRecoverPassword: _recoverPassword,

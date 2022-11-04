@@ -1,5 +1,4 @@
 import 'package:codepod_client/codepod_client.dart';
-import 'package:codepod_flutter/Screens/HomeScreen/homescreen.dart';
 import 'package:codepod_flutter/Screens/LoginScreen/loginscreen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
