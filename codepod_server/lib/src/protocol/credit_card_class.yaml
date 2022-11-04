@@ -1,0 +1,7 @@
+class: CreditCard
+table: creditcard
+fields:
+  cardNumber: String
+  cardHolderName: String
+  expiryDate: String
+  cvvCode: String
