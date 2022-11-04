@@ -2,6 +2,7 @@ import 'package:codepod_client/codepod_client.dart';
 import 'package:codepod_flutter/Screens/HomeScreen/homescreen.dart';
 import 'package:codepod_flutter/Screens/LoginScreen/loginscreen.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:serverpod_flutter/serverpod_flutter.dart';
 
 // Sets up a singleton client object that can be used to talk to the server from
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Serverpod',
       theme: ThemeData(
